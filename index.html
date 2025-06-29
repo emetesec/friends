@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>171</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="google" content="notranslate">
+</head>
+<body class="loaded">
+    <video autoplay muted loop playsinline id="bg-video"> <source src="videos/video.mp4" type="video/mp4">
+    </video>
+
+    <audio id="background-music" loop>
+        <source src="media/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="particles-js"></div>
+    
+    <div id="loading-screen">
+        <button class="reveal-button" id="reveal-button">☆</button>
+    </div>
+
+    <div id="main-content" class="container hidden"> 
+        <div class="cards-wrapper">
+            
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img id="discord-avatar" src="images/iconemete.png" alt="emete">
+                        <div id="status-indicator"></div>
+                    </div>
+                    <h1 id="discord-username">emete</h1>
+                </div>
+                
+                <div class="badges-grid">
+                    <div class="badge" draggable="false">
+                        <img src="images/discordnitro.svg" alt="Nitro">
+                    </div>
+                    <div class="badge" draggable="false">
+                        <img src="images/discordboost5.svg" alt="Boost">
+                    </div>
+                </div>
+                
+                <div class="connections">
+                    <a href="https://github.com/emetesec" class="connection" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/hackersec" class="connection" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img id="discord-avatar" src="images/iconinceboy.png" alt="iceboy">
+                        <div id="status-indicator"></div>
+                    </div>
+                    <h1 id="discord-username">iceboy</h1>
+                </div>
+                
+                <div class="badges-grid">
+                    <div class="badge" draggable="false">
+                        <img src="images/discordnitro.svg" alt="Nitro">
+                    </div>
+                    <div class="badge" draggable="false">
+                        <img src="images/discordboost1.svg" alt="Boost">
+                    </div>
+                </div>
+                
+                <div class="connections">
+                    <a href="https://instagram.com/icedonlyzone" class="connection" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/quimicuser" class="connection" target="_blank">
+                        <i class="fab fa-x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
