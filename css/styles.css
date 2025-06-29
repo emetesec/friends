@@ -26,34 +26,27 @@ body {
     height: auto;
     z-index: -1; 
     transform: translateX(-50%) translateY(-50%); 
+    object-fit: cover; 
+    pointer-events: none; 
 }
 
 #bg-video::-webkit-media-controls {
     display: none !important;
 }
-
 #bg-video::-moz-media-controls {
     display: none !important;
 }
-
 #bg-video::-ms-media-controls {
     display: none !important;
 }
-
 #bg-video::-webkit-media-controls-container {
     display: none !important;
 }
-
 #bg-video::-webkit-media-controls-enclosure {
     display: none !important;
 }
-
 #bg-video::-webkit-media-controls-play-button {
     display: none !important;
-}
-
-#bg-video {
-    pointer-events: none; 
 }
 
 
@@ -265,13 +258,34 @@ body {
 }
 
 @media (max-width: 768px) {
-
     body {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-color: #0a0a0a; 
     }
     #particles-js {
         display: none; 
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .cards-wrapper {
+        gap: 20px; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 0; 
+    }
+
+    .profile-card {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 350px; 
+        padding: 20px; 
+    }
+    
+    .profile-header,
+    .badges-grid,
+    .connections {
+        width: 100%;
     }
 }
